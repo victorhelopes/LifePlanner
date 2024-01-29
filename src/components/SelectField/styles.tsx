@@ -17,7 +17,7 @@ export const TextField = styled.div<{maxWidth?: string}>`
     }
 `;
 
-export const Input = styled.input`
+export const Select = styled.select`
     border-radius: 0.25rem;
     border: 1px solid #4051E6;
     background: rgba(255, 255, 255, 0.00);

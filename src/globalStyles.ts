@@ -9,16 +9,19 @@ export const GlobalStyle = createGlobalStyle`
 
     #root {
         height: 100vh;
+        overflow: hidden;
     }
 
     :root{
         --primary-color: #4051E6;
         --white-color: #FFF;
         --black-color: #000;
+        --confirm-color: #00CB08;
+        --cancel-color: #F50000;
     }
 
     h1 {
-        color: var(--primary-color);
+        color: var(--black-color);
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
@@ -65,7 +68,8 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
     display: flex;
+    justify-content: center;
     height: 100%;
     padding: 7.5rem;
-    background: #EAEAEA;
+    background: #F0F0F0;
 `;

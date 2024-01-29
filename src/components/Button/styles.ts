@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button<{backgroundColor: string; textColor?: string; maxWidth?: string}>`
+export const Button = styled.button<{backgroundColor: string; textColor?: string; maxWidth?: string; border?: boolean}>`
     border-radius: 0.75rem;
     padding: 0.5rem 1.75rem;
     border: none;
@@ -9,12 +9,14 @@ export const Button = styled.button<{backgroundColor: string; textColor?: string
     width: 100%;
     cursor: pointer;
 
-    border: 1px solid var(--primary-color);
+    ${({border}) =>
+        border && 
+        `border: 1px solid var(--primary-color);`
+    }
 
     ${({backgroundColor}) =>
         backgroundColor && 
         `background: var(${backgroundColor});`
-        
     }
 
     ${({textColor})=>
