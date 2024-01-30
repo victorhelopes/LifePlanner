@@ -1,7 +1,10 @@
-import { Button } from '../../../../components/Button';
-import { Card } from '../Card';
-import * as S from './styles'
+
+import { Card } from '../../pages/Home/components/Card';
+import { Button } from '../Button';
+
 import { DataBoardInterface } from './types';
+
+import * as S from './styles'
 
 export function DataBoard({title, buttonTitle, infos, buttonColor, boardType, buttonAction}: DataBoardInterface){
     return (

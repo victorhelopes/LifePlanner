@@ -1,6 +1,6 @@
-import { Button } from '../../../../components/Button'
-import { SelectField } from '../../../../components/SelectField';
-import { Textfield } from '../../../../components/Textfield'
+import { Button } from '../Button'
+import { SelectField } from '../SelectField';
+import { Textfield } from '../Textfield'
 import * as S from './styles'
 
 interface AddObjetiveModalInterface{
@@ -26,7 +26,7 @@ export function AddFinanceModal({closeModal}: AddObjetiveModalInterface){
                     <S.Row>
                         <Textfield placeholder='Valor' label='Valor'/>
                         <Textfield placeholder='Data' label='Data' type='date'/>
-                        <SelectField placeholder='Tipo' label='Tipo' options={[{label: 'Entrada', value: 'debit'}]}/>
+                        <SelectField placeholder='Tipo' label='Tipo' options={[{label: 'Entrada', value: 'cashInFlow'},{label: 'Saída', value: 'cashOutFlow'}]}/>
                     </S.Row>
 
                     <S.Row>

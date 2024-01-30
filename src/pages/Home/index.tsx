@@ -1,10 +1,12 @@
 import { useState } from "react";
+
 import { AddObjetiveModal } from "./components/AddObjetiveModal";
-import { DataBoard } from "./components/DataBoard";
+import { AddFinanceModal } from "../../components/AddFinanceModal";
+import { DataBoard } from "../../components/DataBoard";
+
+import { CardInterface } from "../../common/types";
 
 import * as S from './styles'
-import { AddFinanceModal } from "./components/AddFinanceModal";
-import { CardInterface } from "../../common/types";
 
 export function Home(){
     const [isAddObjetiveModalOpen, setIsAddObjetiveModalOpen] = useState(false);
