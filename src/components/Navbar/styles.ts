@@ -28,7 +28,7 @@ export const Navbar = styled.div`
 `;
 
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.div<{isActive: boolean}>`
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -39,13 +39,22 @@ export const MenuItem = styled.div`
     font-weight: 500;
     line-height: normal;
 
+    ${
+        ({isActive}) =>
+        `color: ${isActive? 'var(--primary-color)' : 'var(--black-color)'};`
+    }
+
     span{
-        color: var(--primary-color);
+        ${
+            ({isActive}) =>
+            `color: ${isActive? 'var(--primary-color)' : 'var(--gray-color)'};`
+        }
         font-size: 2rem;
         margin-right: 1rem;
     }
+
     &:hover{
         width: 100%;
-        background-color: gray;
+        background-color: var(--light-gray-color);
     }
 `;

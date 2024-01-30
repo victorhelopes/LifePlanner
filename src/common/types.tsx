@@ -7,3 +7,10 @@ export interface CardInterface {
     hour?: string;
     value?: string;
 }
+
+export interface navbarItemInterface {
+    icon: string;
+    iconType: string;
+    title: string;
+    link: string;
+}
