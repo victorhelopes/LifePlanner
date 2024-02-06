@@ -9,9 +9,9 @@ interface TextfieldInterface {
 
 export function Textfield({placeholder, maxWidth,  label, type}: TextfieldInterface){
     return(
-        <S.TextField maxWidth={maxWidth}>
+        <S.TextFieldBody maxWidth={maxWidth}>
            <p>{label}</p>
             <S.Input placeholder={placeholder} type={type}/>
-        </S.TextField>
+        </S.TextFieldBody>
     ); 
 }

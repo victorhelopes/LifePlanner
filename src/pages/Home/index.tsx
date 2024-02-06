@@ -7,8 +7,11 @@ import { DataBoard } from "../../components/DataBoard";
 import { CardInterface } from "../../common/types";
 
 import * as S from './styles'
+import { useNavigate } from "react-router-dom";
 
 export function Home(){
+    const navigate = useNavigate();
+
     const [isAddObjetiveModalOpen, setIsAddObjetiveModalOpen] = useState(false);
     const [isFinanceModalOpen, setIsFinanceModalOpen] = useState(false);
 
@@ -26,7 +29,7 @@ export function Home(){
                 <DataBoard 
                     title="Atividades do dia" 
                     buttonTitle="Adicionar nova atividade do dia +"  
-                    buttonAction={()=>{}}
+                    buttonAction={()=>{navigate('/Create-task')}}
                     buttonColor='--confirm-color'
                     boardType="timelineActivities"
                     infos={todayActivities}

@@ -71,7 +71,8 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
     display: flex;
     justify-content: center;
-    height: 100%;
-    padding: 7.5rem;
+    height: 100vh;
+    padding: 5rem 7.5rem;
+    overflow: auto;
     background: #F0F0F0;
 `;

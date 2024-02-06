@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TextField = styled.div<{maxWidth?: string}>`
+export const TextFieldBody = styled.div<{maxWidth?: string}>`
     display: flex;
     flex-direction: column;
     width: 100%;

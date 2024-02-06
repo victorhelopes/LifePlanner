@@ -16,12 +16,12 @@ interface OptionsInterface {
 
 export function SelectField({placeholder, options, label}: SelectInterface){
     return(
-        <S.TextField>
+        <S.SelectFieldBody>
            <p>{label}</p>
             <S.Select placeholder={placeholder}>
                 {options.map(item=>{
                     return <option value={`${item.value}`}>{item.label}</option>})}
             </S.Select>
-        </S.TextField>
+        </S.SelectFieldBody>
     ); 
 }
