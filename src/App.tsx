@@ -11,14 +11,16 @@ import * as S from './globalStyles'
 function App() {
  return (
    <>
-   <GlobalStyle/>
-   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"/>
-  <BrowserRouter>
-    <S.Container>
-      <Navbar/>
-      <PagesRoutes/>
-    </S.Container>
-  </BrowserRouter>
+    <GlobalStyle/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"/>
+    
+    <BrowserRouter>
+      <S.Container>
+        <PagesRoutes/>
+      </S.Container>
+    </BrowserRouter>
+
    </>
  );
 }

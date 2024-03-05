@@ -34,11 +34,17 @@ export const TimeLine = styled.div`
     margin-right: 0.5rem;
 
     .dot {
-        height:1rem;
-        width:1rem;
+        min-height:1rem;
+        min-width:1rem;
         background-color:#fff;
         border:1px solid var(--primary-color);    
         border-radius:50%;
         margin-bottom: 0.5rem;
     }
 `
+
+export const Line = styled.div`
+    height: 100%;
+    width: 0.1rem;
+    background-color: var(--primary-color);
+`;

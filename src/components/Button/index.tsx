@@ -1,20 +1,16 @@
-import { useEffect } from "react"
-
 import * as S from './styles';
 
 interface ButtonInterface {
     placeholder: string;
     backgroundColor: string;
+    loading?: boolean;
     borderColor?: string;
     textColor?: string;
     maxWidth?: string;
     onClick?: ()=> void;
 }
 
-export function Button({placeholder, backgroundColor, textColor, borderColor, maxWidth, onClick}: ButtonInterface){
-    useEffect(()=>{
-        console.log(placeholder)
-    })
+export function Button({placeholder, backgroundColor, textColor, borderColor, maxWidth, loading, onClick}: ButtonInterface){
     return (
         <>
             <S.Button 
@@ -23,7 +19,9 @@ export function Button({placeholder, backgroundColor, textColor, borderColor, ma
                 borderColor={borderColor}
                 onClick={onClick}
                 maxWidth={maxWidth}
-            >{placeholder}</S.Button>
+                loading={loading || false}
+                disabled={loading || false}
+            >{loading? <span  className="material-icons-outlined">autorenew</span>: placeholder}</S.Button>
         </>
     )
 }

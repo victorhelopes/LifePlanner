@@ -4,12 +4,12 @@ import * as S from '../styles'
 import { Textfield } from "../../../components/Textfield";
 import { Button } from "../../../components/Button";
 
-export function SecondStep({nextStep}: StepsInterface){
+export function SecondStep({nextStep, setValue}: StepsInterface){
     return (
         <>
             <h1>Olá Nome,</h1>
             <S.Subtitle>o primeiro passo foi dado, agora nos diga seu email</S.Subtitle>
-            <Textfield label="Email:" placeholder="" maxWidth="21rem"/>
+            <Textfield label="Email:" placeholder="" maxWidth="21rem" setValue={setValue}/>
             <Button placeholder="Proximo passo" backgroundColor="--primary-color" textColor="--white-color" maxWidth="21rem" onClick={nextStep}/>
         </>
     );

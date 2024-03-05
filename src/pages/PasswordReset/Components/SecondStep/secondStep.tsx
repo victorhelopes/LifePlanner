@@ -9,8 +9,8 @@ export function SecondStep({nextStep}: StepsInterface){
         <>
             <h1>Redefina sua senha</h1>
             <S.Inputs>
-                <Textfield label="Senha:" placeholder="" maxWidth="21rem"/>
-                <Textfield label="Confirmar senha:" placeholder="" maxWidth="21rem"/>
+                <Textfield label="Senha:" placeholder="" maxWidth="21rem" setValue={()=>{}}/>
+                <Textfield label="Confirmar senha:" placeholder="" maxWidth="21rem" setValue={()=>{}}/>
             </S.Inputs>
             <Button placeholder="REDEFINIR SENHA" backgroundColor="--primary-color" textColor="--white-color" maxWidth="21rem" onClick={nextStep}/>
         </>
